@@ -28,6 +28,28 @@
     <?= $nav_body?>
     <!-- Masthead
     =====================================-->
+    
+    <!-- Library for slideshow, needs some more additions and work -->
+
+    <script type="text/javascript">
+
+  	effectsDemo2 = 'fade';
+  	var demoSlider_2 = Sliderman.slider({container: 'SliderName_2', width: 700, height: 450, effects: effectsDemo2,
+    display: {
+      autoplay: 3000,
+      loading: {background: '#000000', opacity: 0.5, image: 'WIB2015/demo_2/img/loading.gif'},
+      buttons: {
+        hide: true,
+        opacity: 1,
+        prev: {className: 'SliderNamePrev_2', label: ''},
+        next: {className: 'SliderNameNext_2', label: ''}
+      		},
+      navigation: {container: 'SliderNameNavigation_2', label: '<img src="img/clear.gif" />'}
+    	}
+  	});
+
+	</script>
+    
     <header class="jumbotron subhead" id="overview">
       <div class="inner">
 	<div class="container">
