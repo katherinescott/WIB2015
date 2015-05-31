@@ -22,33 +22,82 @@
     <script src="../js/bootstrap-dropdown.js"></script>
     <script src="../js/s3Slider.min.js"></script>
     <?= $nav_head?>
+  
+  <!-- for slideshow -->
+  <SCRIPT LANGUAGE="JavaScript">
+  
+	var slideShowSpeed = 5000;
+	var crossFadeDuration = 3;
+	var Pic = new Array();
+
+	Pic[0] = 
+	Pic[1] = 
+	Pic[2] = 
+	Pic[3] = 
+	Pic[4] = 
+	
+
+	var t;
+	var j = 0;
+	var p = Pic.length;
+	var preLoad = new Array();
+	for (i = 0; i < p; i++) {
+		preLoad[i] = new Image();
+		preLoad[i].src = Pic[i];
+		}
+	function runSlideShow() {
+		if (document.all) {
+			document.images.SlideShow.style.filter="blendTrans(duration=2)";
+			document.images.SlideShow.style.filter="blendTrans(duration=crossFadeDuration)";
+			document.images.SlideShow.filters.blendTrans.Apply();
+			}
+		document.images.SlideShow.src = preLoad[j].src;
+		if (document.all) {
+			document.images.SlideShow.filters.blendTrans.Play();
+			}
+		j = j + 1;
+		if (j > (p - 1)) j = 0;
+		t = setTimeout('runSlideShow()', slideShowSpeed);
+	}
+</script>
+  
   </head>
-  <body>
+ 
+ 
+  <body onLoad="runSlideShow()">
+  
+  	<!-- Slideshow -->
+  	<div>
+  	<table border="0" cellpadding="0" cellspacing="0">
+		<tr>
+			<td id="VU" height=150 width=150>
+				<img src="1.jpg" name='SlideShow' width=150 height=150>
+			</td>
+		</tr>
+	</table>
+	</div>
+  	
     <!-- Nav Bar -->
+    	<h2 class="offscreen">W3C Web Resources</h2> 
+		<div id="hmenu"> 
+		<ul> 
+  			<li><a href="link">About</a></li> 
+  			<li><a href="link">Leadership</a></li> 
+  			<li><a href="link">Programs</a></li> 
+  			<li><a href="link">Calendar</a></li> 
+  			<li><a href="link">Alumni Website</a></li> 
+  			<li><a href="link">Media</a></li> 
+ 			<li><a href="link">Get Involved</a></li> 
+ 			<li><a href="link">IBC</a></li> 
+  			<li><a href="link">Innovation Competition</a></li> 
+ 			<li><a href="link">YWIB</a></li> 
+		</ul>   
+		</div>
+    
     <?= $nav_body?>
     <!-- Masthead
     =====================================-->
     
-    <!-- Library for slideshow, needs some more additions and work -->
-
-    <script type="text/javascript">
-
-  	effectsDemo2 = 'fade';
-  	var demoSlider_2 = Sliderman.slider({container: 'SliderName_2', width: 700, height: 450, effects: effectsDemo2,
-    display: {
-      autoplay: 3000,
-      loading: {background: '#000000', opacity: 0.5, image: 'WIB2015/demo_2/img/loading.gif'},
-      buttons: {
-        hide: true,
-        opacity: 1,
-        prev: {className: 'SliderNamePrev_2', label: ''},
-        next: {className: 'SliderNameNext_2', label: ''}
-      		},
-      navigation: {container: 'SliderNameNavigation_2', label: '<img src="img/clear.gif" />'}
-    	}
-  	});
-
-	</script>
     
     <header class="jumbotron subhead" id="overview">
       <div class="inner">
