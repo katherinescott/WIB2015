@@ -30,11 +30,9 @@
 	var crossFadeDuration = 3;
 	var Pic = new Array();
 
-	Pic[0] = 
-	Pic[1] = 
-	Pic[2] = 
-	Pic[3] = 
-	Pic[4] = 
+	Pic[0] = "wibstock1.jpg";
+	Pic[1] = "wibstock2.png";
+	Pic[2] = "wibstock3.jpg";
 	
 
 	var t;
