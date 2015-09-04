@@ -1,42 +1,169 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-		<meta name="description" content=""/>
-		<meta name="keywords" content=""/>
-		<!-- To get rid of underlines on links-->
-		<STYLE>
-			<!--
-			A{text-decoration:none}
-			-->
-			body {
-				background-image: url("puppy.jpg");
-			}
-			p {
-				font: 300 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
-  				fill: #bbb;
+  <head>
+    <meta charset="utf-8">
+    <title>About</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  				text-align: center;
-			}
-			h1 {
-				font: 300 24px "Helvetica Neue", Helvetica, Arial, sans-serif;
-  				fill: #bbb;
-  				text-align: center;
-  				margin-top: 80px;
+    <!-- Le styles -->
+    <link rel="stylesheet" href="css/stylesheet.css"/>
+	<!--<link rel="stylesheet" href="fonts.css"/>		-->
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<meta name="description" content=""/>
+	<meta name="keywords" content=""/>
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css">
+		
 
-			}
-			.huwib {
-				display: block;
-				margin: auto auto;
-				margin-top: 100px;
-				width:200px;
-			}
+    <!-- Le javascript -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="../js/bootstrap-dropdown.js"></script>
+    <script src="../js/s3Slider.js"></script>
+    <script src="js/jquery.slides.js"></script>
+  
+  <!-- for slideshow -->
+  <SCRIPT LANGUAGE="JavaScript">
+  
+	/*var slideShowSpeed = 5000;
+	var crossFadeDuration = 1000;
+	var Pic = new Array();
 
-		</STYLE>
-	</head>
-	<body>
-		<img class="huwib" src="huwib.png">
-		<h1>Our website is getting some TLC.</h1>
-		<p>We'll be back as soon as possible!</p>
-	</body>
-<html>
+	Pic[0] = "images/banner1.jpg";
+	Pic[1] = "images/banner3.jpg";
+	
+
+	var t;
+	var j = 0;
+	var p = Pic.length;
+	var preLoad = new Array();
+	for (i = 0; i < p; i++) {
+		preLoad[i] = new Image();
+		preLoad[i].src = Pic[i];
+		}
+	function runSlideShow() {
+		if (document.all) {
+			document.images.SlideShow.style.filter="blendTrans(duration=2)";
+			document.images.SlideShow.style.filter="blendTrans(duration=crossFadeDuration)";
+			document.images.SlideShow.filters.blendTrans.Apply();
+			}
+		document.images.SlideShow.src = preLoad[j].src;
+		if (document.all) {
+			document.images.SlideShow.filters.blendTrans.Play();
+			}
+		j = j + 1;
+		if (j > (p - 1)) j = 0;
+		t = setTimeout('runSlideShow()', slideShowSpeed);
+	}*/
+
+
+
+
+	/*$("slidesjs-control").css('height', banner_height + 'px !important');*/
+
+</script>
+
+  
+  </head>
+ 
+ 
+  <!--<body onLoad="runSlideShow()">-->
+  <body>
+
+  	<div class="navbar_home">
+          <ul class="bar">
+          	<a href='index.html' ><img src='images/HUWIB_logo.jpg' class='navbar_icon_home'></a>
+            <li><a href="programs.html" id="nav">PROGRAMS</a></li>
+            <li><a href="leadership.html" id="nav2">LEADERSHIP</a></li>
+            <li><a href="wibternship.html" id="nav3">WIBTERNSHIP</a></li>
+            <!--<li><a href="http://ibc.huwib.org" target="_blank" id="nav3">IBC</a></li>-->
+            <!--<li><a href="" target="_blank" id="nav3">ALUMNI</a></li>-->
+            <a href='https://www.facebook.com/HUWIB?fref=ts' target='_blank'><img src='images/facebook.png' class='navbar_icon' id='fb'></a>
+            <a href='https://twitter.com/huwib' target="_blank"><img src='images/twitter.png' class='navbar_icon'></a>
+            <a href='https://instagram.com/huwib/' target='_blank'><img src='images/instagram.png' class='navbar_icon'></a>
+          </ul>
+
+        </div>
+
+    <div class="navbar_home_back">
+          <ul class="bar">
+          	<a href='index.html' ><img src='images/HUWIB_logo.jpg' class='navbar_icon_home'></a>
+            <li><a href="programs.html" id="nav">PROGRAMS</a></li>
+            <li><a href="leadership.html" id="nav2">LEADERSHIP</a></li>
+            <li><a href="wibternship.html" id="nav3">WIBTERNSHIP</a></li>
+            <!--<li><a href="http://ibc.huwib.org" target="_blank" id="nav3">IBC</a></li>-->
+            <!--<li><a href="" target="_blank" id="nav3">ALUMNI</a></li>-->
+            <li><a href="about.html" id="nav3">ABOUT</a></li>
+            <a href='https://www.facebook.com/HUWIB?fref=ts' target='_blank'><img src='images/facebook.png' class='navbar_icon' id='fb'></a>
+            <a href='https://twitter.com/huwib' target="_blank"><img src='images/twitter.png' class='navbar_icon'></a>
+            <a href='https://instagram.com/huwib/' target='_blank'><img src='images/instagram.png' class='navbar_icon'></a>
+          </ul>
+
+        </div>
+
+
+  	<!-- Slideshow -->
+  	<!--<div id='s3slider' class='banner_div'>
+  	<table border="0" cellpadding="0" cellspacing="0">
+		<tr>
+			<td class="banner" >
+				<img src="wibstock1.jpg" name='SlideShow' class='banner'>
+			</td>
+		</tr>
+	</table>
+	</div>-->
+
+	<div id="slides">
+	    <img src="images/ibc_banner.png">
+	    <!--<img src="images/MIH_banner.jpg">-->
+	    <img src="images/fall_banner.jpg">
+
+	  </div>
+
+  	
+
+
+    
+    <?= $nav_body?>
+    <!-- Masthead
+    =====================================-->
+    
+    
+    <div class="mission">
+		  <img src="images/logo_icon.png" class="after_mission">
+		  <p class="mission_title">OUR MISSION</p>
+		  <p class="lead_new">HUWIB seeks to empower future female leaders by uniting them through business education and experience.</p>
+			<!--<a href='../programs/harvard-programs' class='btn'>More about our organization &raquo;</a>-->
+			<p class="description">Founded in 2000 by several undergraduate students, HUWIB has grown into a leading community of empowerment for college women at Harvard University and beyond. With 8 sub-committees and 13 executive board positions, the members of HUWIB strive to develop programming that will introduce aspiring business leaders to the diverse range of opportunities in business. On-campus programming includes panels, workshops, networking sessions, mentorship programs, a mini MBA program, case and innovation competitions, and the annual International Women in Business Summit. In addition, HUWIB organizes several off-campus events including the New York Trip, the International Career Exploratory Trip, and the annual Intercollegiate Business Convention (IBC).</p>
+
+    </div>
+
+    <div class="container" id="calendar">
+    	<p class="calendar_title">UPCOMING EVENTS</p>
+		<script class="ai1ec-widget-placeholder" data-widget="ai1ec_superwidget">
+		  (function(){var d=document,s=d.createElement('script'),
+		  i='ai1ec-script';if(d.getElementById(i))return;s.async=1;
+		  s.id=i;s.src='http://live-timely-42faf1d57b.time.ly/?ai1ec_js_widget';
+		  d.getElementsByTagName('head')[0].appendChild(s);})();
+		</script>
+	</div>
+  
+
+  <!-- Le footer -->
+    <div class='container'>
+	<?= $footer?>
+    </div>
+
+
+	<script>
+
+	/** slide settings **/
+	
+
+    var banner_height = $(window).width()/2.86;
+    console.log(banner_height);
+
+	$("#slides").css('height', banner_height + 'px');
+
+
+	</script>
+  </body>
+</html>
